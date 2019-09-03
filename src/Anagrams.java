@@ -5,12 +5,12 @@ import java.util.Map;
 public class Anagrams {
 	
 	static String valor1 = "anagram";
-	static String valor2= "margana";
+	static String valor2= "marganaaa";
 	
 	final static Map<Character, Integer> mapResult = new HashMap<>();
 	final static Map<Character, Character> mapTotal = new HashMap<>();
 	
-	
+	/**
 	public static void main(String[] args) {
 		if(!validaPalavra()){
 			valor1 = valor1.toLowerCase();
@@ -18,11 +18,13 @@ public class Anagrams {
 			preenchemap();
 			if(calculaTotal()){
 				System.out.println("Anagram");
+			}else{
+				System.out.println("Not anagrams");
 			}
 		}
-		System.out.println("Not anagrams");
+		
 	}
-
+*/ 
 	public static boolean validaPalavra(){
 		int aux = valor1.length();
 		return (aux != valor2.length() ? true : false);
