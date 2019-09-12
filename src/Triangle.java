@@ -1,12 +1,12 @@
 public class Triangle {
 
-
+	/**
 	public static void main(String args[]) {
 		int number = 7;
 		printTriangle(number);
 		printInvertTriangle(number);
 	}
-
+	*/
 	public static void printTriangle(int number) {
 		
 		for (int i = 0; i < number; i++) {

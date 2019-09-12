@@ -5,11 +5,11 @@ public class SockMerchant {
 	static int number = 9;
 	static int[] array = { 10, 20, 60, 10, 40, 30, 50, 10, 20 };
 
-	
+	/**
 	public static void main(String args[]) {
 		calculate();
 	}
-
+	 */
 	public static void calculate() {
 		int match = 0;
 		int comparator = 0;
