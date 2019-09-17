@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 // Receive one array of numbers and show inverted, the last number will be the first
 public class InvertArray {
