@@ -1,6 +1,4 @@
 import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class Bingo {
 	
@@ -63,7 +61,8 @@ public class Bingo {
 	public static void generateNumbers(){
 		Random number = new Random(); 
 		playCount = playCount+1;
-
+		setTimeToGenerateNumbers();
+		
 		for(int i =0; i< 1;i++){
 			sortedNumbers[i] = number.nextInt(100);
 			
@@ -72,14 +71,7 @@ public class Bingo {
 	}
 	
 	public static void setTimeToGenerateNumbers(){
-		int delay = 5000;
-		int interval = 1000;
-		Timer timer = new Timer();
-		timer.scheduleAtFixedRate(new TimerTask(){
-			public void run(){
-				generateNumbers();
-			}
-		},delay, interval);
+		SetTimerBingo.Init();
 	}
 	
 	public static void verifyTable(){

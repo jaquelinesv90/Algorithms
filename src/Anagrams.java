@@ -9,7 +9,7 @@ public class Anagrams {
 	
 	final static Map<Character, Integer> mapResult = new HashMap<>();
 	final static Map<Character, Character> mapTotal = new HashMap<>();
-	/*
+	
 
 	public static void main(String[] args) {
 		if(!validaPalavra()){
@@ -24,7 +24,7 @@ public class Anagrams {
 		}
 		
 	}
-*/
+
 	public static boolean validaPalavra(){
 		int aux = valor1.length();
 		return (aux != valor2.length() ? true : false);
