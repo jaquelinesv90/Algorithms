@@ -5,19 +5,19 @@ import java.util.Map;
 
 public class Anagrams {
 	
-	static String valor1 = "anagram";
-	static String valor2= "marganaaa";
+	static String value1 = "anagram";
+	static String value2= "marganaaa";
 	
 	final static Map<Character, Integer> mapResult = new HashMap<>();
 	final static Map<Character, Character> mapTotal = new HashMap<>();
 	
 
 	public static void main(String[] args) {
-		if(!validaPalavra()){
-			valor1 = valor1.toLowerCase();
-			valor2 = valor2.toLowerCase();
-			preenchemap();
-			if(calculaTotal()){
+		if(!validateWord()){
+			value1 = value1.toLowerCase();
+			value2 = value2.toLowerCase();
+			fillMap();
+			if(calculateTotal()){
 				System.out.println("Anagram");
 			}else{
 				System.out.println("Not anagrams");
@@ -26,15 +26,15 @@ public class Anagrams {
 		
 	}
 
-	public static boolean validaPalavra(){
-		int aux = valor1.length();
-		return (aux != valor2.length() ? true : false);
+	public static boolean validateWord(){
+		int aux = value1.length();
+		return (aux != value2.length() ? true : false);
 	}
 	
 	
-	public static void preenchemap(){
-		for(int i= 0; i<valor2.length();i++){
-			char letter = valor2.charAt(i);
+	public static void fillMap(){
+		for(int i= 0; i<value2.length();i++){
+			char letter = value2.charAt(i);
 			
 			// sempre adiciona o valor ao mapa
 			if(!mapResult.containsKey(letter)){
@@ -46,9 +46,9 @@ public class Anagrams {
 		}
 	}
 	
-	public static boolean calculaTotal(){
-		for(int k = 0; k < valor1.length(); k++){
-			char letter = valor1.charAt(k);
+	public static boolean calculateTotal(){
+		for(int k = 0; k < value1.length(); k++){
+			char letter = value1.charAt(k);
 			
 			if(!mapResult.containsKey(letter)){
 				return false;

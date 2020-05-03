@@ -3,7 +3,7 @@ public class Triangle {
 
 	
 	public static void main(String args[]) {
-		int number = 7;
+		int number = 7; //numero de linhas do triangulo
 		printTriangle(number);
 		printInvertTriangle(number);
 	}
