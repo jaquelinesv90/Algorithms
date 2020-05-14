@@ -1,26 +1,24 @@
 package algorithms.invertarray;
-import java.util.Arrays;
 
 
 // Receive one array of numbers and show inverted, the last number will be the first
 public class InvertArray {
 
-	static int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
-	static int[] result = new int[8];
+	static Object[] array = { "Joao", "maria", "carlos", "juliana" };
 
 	public static void main(String[] args) {
-		invertArray();
-		Arrays.sort(numbers);
+		invertUsingFor();
 	}
 
-	public static void invertArray() {
-		for (int i = 0; i < numbers.length - 1; i++) {
-			result[i] = numbers[numbers.length - i - 1];
+	static void invertUsingFor() {
+		for (int i = 0; i < array.length / 2; i++) {
+			Object temp = array[i];
+			array[i] = array[array.length - 1 - i];
+			array[array.length - 1 - i] = temp;
 		}
 
-		for (int ars : result) {
-			System.out.print(ars + "");
+		for (Object n : array) {
+			System.out.print(n + " - ");
 		}
 	}
-
 }

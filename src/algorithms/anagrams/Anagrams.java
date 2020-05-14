@@ -2,7 +2,7 @@ package algorithms.anagrams;
 import java.util.HashMap;
 import java.util.Map;
 
-
+// uma palavra que pode formar outras ex: Iracema -> America
 public class Anagrams {
 	
 	static String value1 = "anagram";
