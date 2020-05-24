@@ -1,12 +1,13 @@
 package algorithms.anagrams;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 // uma palavra que pode formar outras ex: Iracema -> America
 public class Anagrams {
 	
-	static String value1 = "anagram";
-	static String value2= "marganaaa";
+	static String value1 = "low-salt";
+	static String value2= "owls-lat";
 	
 	final static Map<Character, Integer> mapResult = new HashMap<>();
 	final static Map<Character, Character> mapTotal = new HashMap<>();
@@ -63,4 +64,25 @@ public class Anagrams {
 		}
 		return true;
 	}
+	
+	//utilizando sort
+	/**
+* public static void main(String[] args){
+		String string1 = "low-salt";
+		String string2 = "owls-lat";
+		System.out.print(isAnagramSort(string1, string2));
+	}
+	
+	
+	static boolean isAnagramSort(String string1, String string2) {
+	    if (string1.length() != string2.length()) {
+	        return false;
+	    }
+	    char[] a1 = string1.toCharArray();
+	    char[] a2 = string2.toCharArray();
+	    Arrays.sort(a1);
+	    Arrays.sort(a2);
+	    return Arrays.equals(a1, a2);
+	}
+	 */
 }
