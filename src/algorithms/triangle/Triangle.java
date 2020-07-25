@@ -1,4 +1,7 @@
 package algorithms.triangle;
+
+
+// given a number of lines, print a triangle
 public class Triangle {
 
 	
