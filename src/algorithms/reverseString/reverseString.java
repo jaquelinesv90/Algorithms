@@ -1,6 +1,6 @@
 package algorithms.reverseString;
 
-// Write a function htat takes a string as input and
+// Write a function that takes a string as input and
 // returns the string reversed.
 // ex. Given s = "hello", return "olleh".
 public class reverseString {

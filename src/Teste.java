@@ -1,32 +1,23 @@
 
 public class Teste {
 	
-	public static void main(String[] args){
-		int number = 10;
-		print(number);
+	public static void main(String[] args) {
+		String s = "madam";
+		System.out.print(reverse(s));
 	}
 	
-	public static void print(int number){
+	public static String reverse(String s){
+		char[] characters = s.toCharArray();
+		int i = 0;
+		int j = s.length() - 1;
 		
-		for(int i = 0; i< number; i++){
-			
-			for(int j = number - i; j > 1; j--){
-				System.out.print(" ");
-			}
-			
-			for(int k= 0; k<= i;k++){
-				System.out.print("* ");
-			}
-			
-			System.out.println();
-			
+		while(i < j){
+			char temp = characters[i];
+			characters[i++] = characters[j];
+			characters[j--] = temp;
 		}
-		
-		
-		
-		
+		return new String(characters);	
 	}
-	
 	
 	
 }
