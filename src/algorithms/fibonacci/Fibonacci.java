@@ -1,5 +1,7 @@
 package algorithms.fibonacci;
- // de sequence starts in 1; after each number is add to number before
+
+// Leval: Easy
+// de sequence starts in 1; after each number is add to number before
 //f2 = f1 + anterior = 1
 //f3 = f2+f1 = 1+1= 2
 //f4 = f3 +f2 = 2+1 = 3
@@ -9,6 +11,26 @@ package algorithms.fibonacci;
 
 public class Fibonacci {
 	
+	public static void main(String[] args) {
+
+		int maxNumber = 10;
+		int previousNumber = 0;
+		int nextNumber = 1;
+
+		System.out.print("Fibonacci " + maxNumber + " numbers: ");
+
+		for (int i = 1; i <= maxNumber; i++) {
+			System.out.print(previousNumber + " ");
+
+			int sum = previousNumber + nextNumber;
+			previousNumber = nextNumber;
+			nextNumber = sum;
+		}
+	}	
+	
+////////////////other way to solve
+	
+	/*
 	public static void main(String[] args){
 		
 		for(int i = 1; i<10 ; i++){
@@ -31,4 +53,5 @@ public class Fibonacci {
 		}
 		return current;
 	}
+*/
 }
