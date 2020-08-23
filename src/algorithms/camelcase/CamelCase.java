@@ -6,7 +6,7 @@ import java.util.List;
 public class CamelCase {
 
 	static String phrase = "saveChangesInTheEditor";
-	static int count = 1;
+	static int count = 1; //começa com 1 pois a primeira letra é minuscula, nesse caso não contaria a primeira palavra
 	
 	public static void main(String[] args) {
 		countLetters();
@@ -30,6 +30,12 @@ public class CamelCase {
 
 		for (int i = 0; i < phrase.length(); i++) {
 			
+			if (Character.isUpperCase(phrase.charAt(i))) {
+				char aux = phrase.charAt(i);
+			}
+			
+			
+			/*
 			do{
 				word = String.valueOf(phrase.charAt(i));
 			}while(Character.isLowerCase(phrase.charAt(i)));				
@@ -37,7 +43,7 @@ public class CamelCase {
 			listWords.add(word);
 			
 			word = "";
-			
+			*/
 		}
 	}
 }

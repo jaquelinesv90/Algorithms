@@ -2,6 +2,7 @@ package algorithms.fibonacci;
 
 // Leval: Easy
 // de sequence starts in 1; after each number is add to number before
+// f1 = 1
 //f2 = f1 + anterior = 1
 //f3 = f2+f1 = 1+1= 2
 //f4 = f3 +f2 = 2+1 = 3
@@ -52,6 +53,6 @@ public class Fibonacci {
 			}
 		}
 		return current;
-	}
+		}{
 */
 }
