@@ -34,7 +34,7 @@ public class CamelCase {
 				char aux = phrase.charAt(i);
 			}
 			
-			
+			           
 			/*
 			do{
 				word = String.valueOf(phrase.charAt(i));
