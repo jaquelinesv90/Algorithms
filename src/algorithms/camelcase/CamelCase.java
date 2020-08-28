@@ -7,7 +7,7 @@ public class CamelCase {
 
 	static String phrase = "saveChangesInTheEditor";
 	static int count = 1; //começa com 1 pois a primeira letra é minuscula, nesse caso não contaria a primeira palavra
-	
+						 // starts in 1 because the first letter is lower, in this case we don't count de first word 
 	public static void main(String[] args) {
 		countLetters();
 		showWords();

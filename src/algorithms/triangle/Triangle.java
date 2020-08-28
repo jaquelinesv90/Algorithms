@@ -1,12 +1,11 @@
 package algorithms.triangle;
 
-
 // given a number of lines, print a triangle
 public class Triangle {
 
 	
 	public static void main(String args[]) {
-		int number = 7; //numero de linhas do triangulo
+		int number = 7; //numero de linhas do triangulo //triangle number of lines
 		printTriangle(number);
 		printInvertTriangle(number);
 	}

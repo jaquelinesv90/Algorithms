@@ -1,7 +1,7 @@
 package algorithms.sum;
 
-//given a list of numbers and a number k, return whether any two number from the lis
-//add up to k.
+/*given a list of numbers and a number k, return whether any two number from the lis
+//add up to k. */
 public class Sum {
 
 	public static void main(String[] args){

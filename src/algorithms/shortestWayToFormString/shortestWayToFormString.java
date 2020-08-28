@@ -1,11 +1,12 @@
 package algorithms.shortestWayToFormString;
-// level: Medium
-// From any string, we can form a subsequence
-// of that string by deleting some number of characters(possibly no deletions)
-// Given two string source and target, return the minium number of subsequences of
-//source such that their concatenation equals target.If the task is impossible, return -1.
-// ex: input = "abc", target ="abcbc"
-// output: 2
+
+/* level: Medium
+ From any string, we can form a subsequence
+of that string by deleting some number of characters(possibly no deletions)
+Given two string source and target, return the minium number of subsequences of
+source such that their concatenation equals target.If the task is impossible, return -1.
+ex: input = "abc", target ="abcbc"
+output: 2 */
 public class ShortestWayToFormString {
 	
 	public static void main(String[] args){

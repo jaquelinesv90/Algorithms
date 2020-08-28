@@ -1,4 +1,4 @@
-package algorithms.JavaIntToString;
+package algorithms.javaIntToString;
 
 //you are given an integer n, you have to convert into a string
 public class ConvertIntToString {

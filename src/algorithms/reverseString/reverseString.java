@@ -1,9 +1,9 @@
 package algorithms.reverseString;
 
-// Write a function that takes a string as input and
-// returns the string reversed.
-// ex. Given s = "hello", return "olleh".
-public class reverseString {
+/* Write a function that takes a string as input and
+ returns the string reversed.
+ ex. Given s = "hello", return "olleh".*/
+public class ReverseString {
 	
 	public static void main(String[] args) {
 		String s = "hello";

@@ -1,8 +1,8 @@
-package algorithms.jogodavelha;
+package algorithms.ticTacToe;
 
 import java.util.Scanner;
 
-public class JogoDaVelhaII {
+public class TicTacToeII {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

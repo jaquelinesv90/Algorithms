@@ -1,9 +1,9 @@
-package algorithms.jogodavelha;
+package algorithms.ticTacToe;
 import java.io.IOException;
 import java.util.Scanner;
 
 
-public class JogodaVelha {
+public class TicTacToe {
 	
 	static char opcao = '-';
 	

@@ -2,10 +2,10 @@ package algorithms.endoffile;
 import java.util.ArrayList;
 import java.util.List;
 
-//Read some unknow lines and print with number
-// hello world
-//
-// 1 hello world
+/*Read some unknow lines and print with number
+hello world
+
+1 hello world*/
 public class EndOfFile {
 
 	static List<String> listInput = new ArrayList<String>();

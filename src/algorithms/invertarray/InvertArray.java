@@ -13,7 +13,7 @@ public class InvertArray {
 	static void invertUsingFor() {
 		for (int i = 0; i < array.length / 2; i++) {
 			Object temp = array[i];
-			array[i] = array[array.length - 1 - i];//pegando ultimo objeto
+			array[i] = array[array.length - 1 - i];//pegando ultimo objeto //cathing the last object
 			array[array.length - 1 - i] = temp;
 		}
 

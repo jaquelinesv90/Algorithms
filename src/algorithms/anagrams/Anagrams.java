@@ -3,6 +3,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 // uma palavra que pode formar outras ex: Iracema -> America
+
+//word formed by rearranging the letters of a different word  ex: listen -> silence
 public class Anagrams {
 	
 	static String value1 = "low-salt";

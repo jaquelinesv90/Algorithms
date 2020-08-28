@@ -1,6 +1,5 @@
 package algorithms.evennumber;
 
-
 //give 2 numbers calculate even number between them
 public class EvenNumber {
 	

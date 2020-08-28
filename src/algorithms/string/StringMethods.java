@@ -2,8 +2,8 @@ package algorithms.string;
 
 public class StringMethods {
 	
-	
 	//charAt - retorna apenas um caractere em determinada posição
+	//charAt function - return character located at the String's specified index.
 	public static void charat(){
 		String valor = "Hello";
 		char result = valor.charAt(0);
@@ -12,6 +12,7 @@ public class StringMethods {
 	
 	//compareTo - compara Strings considera letras maiúsculas e minusculas
 	//compareToIgnoreCase - desconsidera letras maiúsculas e minusculas
+	//compareTo
 	public static void  compare(){
 		String valor = "DEVMEDIA-Java";
 		
