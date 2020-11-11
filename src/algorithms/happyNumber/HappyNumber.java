@@ -25,10 +25,14 @@ import java.util.HashSet;
 
 public class HappyNumber {
 	
-	
 	public static void main(String[] args) {
 		int n = 19;
-		isHappy(n);
+		if(isHappy(n)){
+			System.out.println(n +" is a happy number");
+		}else{
+			System.out.println(n +" is not a happy number");
+		}
+		
 	}
 	
 	public static boolean isHappy(int n){
