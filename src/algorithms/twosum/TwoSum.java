@@ -22,11 +22,11 @@ public class TwoSum {
 			
 				number = nums[i];
 				if (number + nums[i + 1] == target) {
-					output[j] = nums[i];
-					break;
-	
+					output[i] = nums[i]; //adicionando na primeira casa do array
+					output[j +1] = nums[i];  //adicionando na segunda casa do array
 				}
 			}
+			break;
 		}
 		for(int i = 0; i < nums.length; i++){
 			System.out.println("output: "+ output[i]);
