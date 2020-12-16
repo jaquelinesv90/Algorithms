@@ -1,7 +1,5 @@
 package algorithms.romanToInteger;
 
-import java.util.HashMap;
-import java.util.Map;
 
 /* Roman numerals are represented by seven different symbols: I,V,X,L,C,D,M.
  * 
@@ -23,30 +21,40 @@ import java.util.Map;
 
 public class RomanToInteger {
 	
-	String inputRomanNumeral= "I";
-	Integer outputNumber;
-	int total = 0;
+	int value(char c){
+		if(c == 'I')
+			return 1;
+		if(c == 'V')
+			return 5;
+		if(c == 'X')
+			return 10;
+		if(c == 'L')
+			return 50;
+		if(c == 'C')
+			return 100;
+		if(c == 'D')
+			return 500;
+		if(c == 'M')
+			return 1000;
+		return -1;
+	}
+	/*
+	int romanToInt(String s){
+		int total = 0;
+		
+		
+	}
+	*/
 	
-	static Map<String,Integer> map = new HashMap<>();
 	
 	public static void main(String[] args){
-		fillMap();
-		
-		while(){
-			
-		}
+		RomanToInteger r = new RomanToInteger();
+		String value = "MCMXCIV";
+		//System.out.println(r.romanToInt(value));
 		
 	}
 	
-	public static void fillMap(){
-		map.put("I",1);
-		map.put("V",5);
-		map.put("X",10);
-		map.put("L",50);
-		map.put("C",1);
-		map.put("D",1);
-		map.put("M",1);
-	}
+	
 	
 	
 

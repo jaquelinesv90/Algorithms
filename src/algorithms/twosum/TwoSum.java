@@ -1,5 +1,8 @@
 package algorithms.twosum;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /*Given an array of integers num and an integer target, return indices 
  * of the two numbers such that they add up to target.
  * You may assume that each input would have exactly one solution, and
@@ -11,26 +14,26 @@ package algorithms.twosum;
  */
 public class TwoSum {
 	
-	public static void main(String[] args) {
+	Map<Integer,Integer> map = new HashMap<>();
+	static int target = 9;
+	
+	public int[] calc(){
 		int[] nums = { 2, 7, 11, 15 };
-		int[] output = new int[2];
-		int target = 9;
-		int number = 0;
-
-		for (int i = 0; i < nums.length; i++) {
-			for(int j = 0; j< nums.length; j++){
-			
-				number = nums[i];
-				if (number + nums[i + 1] == target) {
-					output[i] = nums[i]; //adicionando na primeira casa do array
-					output[j +1] = nums[i];  //adicionando na segunda casa do array
+		
+		for(int i = 0; i< nums.length; i++){
+			for(int j = i+1;j<nums.length;j++){
+				if(nums[j] == target - nums[i]){
+					return new int[] {i,j};
 				}
 			}
-			break;
 		}
-		for(int i = 0; i < nums.length; i++){
-			System.out.println("output: "+ output[i]);
-		}
-
+		throw new IllegalArgumentException("no solution");
+	}
+	
+	public static void main(String[] args) {
+		
+		TwoSum t = new TwoSum();
+		
+		System.out.println(t.calc());
 	}
 }
