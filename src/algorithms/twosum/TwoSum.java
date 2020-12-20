@@ -15,7 +15,7 @@ import java.util.Map;
 public class TwoSum {
 	
 	Map<Integer,Integer> map = new HashMap<>();
-	static int target = 9;
+	static int target = 18;
 	
 	public int[] calc(){
 		int[] nums = { 2, 7, 11, 15 };
@@ -33,7 +33,11 @@ public class TwoSum {
 	public static void main(String[] args) {
 		
 		TwoSum t = new TwoSum();
+		int[] result = t.calc();
 		
-		System.out.println(t.calc());
+		for(int i = 0; i< result.length;i++){
+			System.out.print(result[i] + ",");
+		}
+		
 	}
 }

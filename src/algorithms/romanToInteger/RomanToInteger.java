@@ -2,7 +2,6 @@ package algorithms.romanToInteger;
 
 
 /* Roman numerals are represented by seven different symbols: I,V,X,L,C,D,M.
- * 
  * Symbol       Value
  *   I             1
  *   V			   5	
@@ -21,41 +20,29 @@ package algorithms.romanToInteger;
 
 public class RomanToInteger {
 	
-	int value(char c){
-		if(c == 'I')
-			return 1;
-		if(c == 'V')
-			return 5;
-		if(c == 'X')
-			return 10;
-		if(c == 'L')
-			return 50;
-		if(c == 'C')
-			return 100;
-		if(c == 'D')
-			return 500;
-		if(c == 'M')
-			return 1000;
-		return -1;
-	}
-	/*
-	int romanToInt(String s){
-		int total = 0;
+	public int romanInt(String s){
+		String[] roman = new String[] {"I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"};
+		int[] numeral = new int[] {1,4,5,9,10,40,50,90,100,400,500,900,1000};
 		
+		int index = roman.length - 1;
+		int sum = 0;
 		
+		while(index >= 0){
+			if(s.startsWith(roman[index])){
+				sum += numeral[index];
+				s = s.substring(roman[index].length());
+			}else{
+				index --;
+			}
+		}
+		return sum;
 	}
-	*/
+
 	
-	
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		RomanToInteger r = new RomanToInteger();
-		String value = "MCMXCIV";
-		//System.out.println(r.romanToInt(value));
-		
+		System.out.println(r.romanInt("LVIII"));
 	}
-	
-	
-	
 	
 
 }
