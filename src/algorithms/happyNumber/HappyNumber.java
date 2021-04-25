@@ -15,7 +15,7 @@ import java.util.HashSet;
  * 
  * ex: number 19
  * 
- * 1^2 + 9^2 = 82
+ * 1^2(le-se 1 ao quadrado) + 9^2(nove ao quadrado) = 82
  * 8^2 + 2^2 = 68
  * 6^2 + 8^2 = 100
  * 1^2 + 0^2 + 0^2 = 1

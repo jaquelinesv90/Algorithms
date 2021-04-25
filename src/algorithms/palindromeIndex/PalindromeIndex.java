@@ -19,15 +19,28 @@ package algorithms.palindromeIndex;
  */
 public class PalindromeIndex {
 	
-	
-	public static void main(String[] args) {
-		String s = "bcbc";
-		palindrome(s);
+	//não tem modificador de acesso então é default, acessivel a todas as classes dentor do mesmo pacote
+	static int palindrome(String s){
+		int palindromeIndex = -1;
+		int len = s.length();
+		
+		for(int i =0; i< len / 2; i++){
+			if(s.charAt(i) != s.charAt(len - i -1)){
+				boolean isRightStringValidPalindrome = isValidPalindrome(s.substring(i+1,len-i));
+				if(isRightStringValidPalindrome){
+					return i;
+				}else
+					return len - i- 1;
+			}
+		}
+		return palindromeIndex;
 	}
 	
-	public static void palindrome(String s){
-		
-		
+	public static boolean isValidPalindrome(String str){
+		int len = str.length();
+		for(){
+			
+		}
 	}
 
 }
