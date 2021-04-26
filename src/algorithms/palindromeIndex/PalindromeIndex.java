@@ -19,13 +19,15 @@ package algorithms.palindromeIndex;
  */
 public class PalindromeIndex {
 	
-	//não tem modificador de acesso então é default, acessivel a todas as classes dentor do mesmo pacote
+	//não tem modificador de acesso então é default, acessivel a todas as classes dentro do mesmo pacote
 	static int palindrome(String s){
 		int palindromeIndex = -1;
 		int len = s.length();
 		
 		for(int i =0; i< len / 2; i++){
+			//aqui vai pegar a primeira letra e a ultima 
 			if(s.charAt(i) != s.charAt(len - i -1)){
+				//aqui ele vai cortar a string 
 				boolean isRightStringValidPalindrome = isValidPalindrome(s.substring(i+1,len-i));
 				if(isRightStringValidPalindrome){
 					return i;
@@ -38,9 +40,16 @@ public class PalindromeIndex {
 	
 	public static boolean isValidPalindrome(String str){
 		int len = str.length();
-		for(){
-			
+		for(int i= 0; i<len / 2; i++){
+			if(str.charAt(i) != str.charAt(len -i -1)){
+				return false;
+			}
 		}
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(palindrome("aaabb"));
 	}
 
 }
