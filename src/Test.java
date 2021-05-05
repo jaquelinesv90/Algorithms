@@ -1,25 +1,32 @@
 
 public class Test {
-	
-	public static void main(String[]  args){
-		int number = 7;
-		isHappy(number);
+	//count how many words are in the phrase
+	public static void main(String[] args) {
+		String phrase = "SaveChangesInTheEditor";
+		int count = 1;
+		//counter(phrase,count);
+		showWords(phrase);
 	}
 	
-	public static boolean isHappy(int n){
-		double aux;
-		
-		do{
-		
-			aux = Math.pow(n, 2);
-			System.out.println("print: " + n);
-			
-			
-		}while(n != 1);
-		
-		
-		
-		return true;
+	public static void counter(String phrase,int count){
+		for(int i = 0; i< phrase.length();i++){
+			if(Character.isUpperCase(phrase.charAt(i))){
+				count++;
+			}
+		}
+		System.out.println(count);
 	}
-
+	
+	public static void showWords(String phrase){
+		for(int i = 0; i< phrase.length();i++){
+			if(Character.isUpperCase(phrase.charAt(i))){
+				System.out.println(phrase.substring(i));
+			}
+		}
+		
+		
+	}
+	
+	
+	
 }

@@ -1,17 +1,18 @@
 package algorithms.stairCase;
 
+// escadaria
 //receive a number of lines.It should print a staircase 
 public class StairCase {
 
 	public static void main(String[] args){
-		int lines = 8;
+		int lines = 6;
 		print(lines);
 	}
 	
-	public static void print(int l){
-		for(int i =0; i< l;i++){
+	public static void print(int lines){
+		for(int i =0; i< lines;i++){
 			
-			for(int j=l -i;j>1;j--){
+			for(int j=lines-i;j>1;j--){
 				System.out.print(" ");
 			}
 			

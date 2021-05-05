@@ -25,25 +25,10 @@ public class CamelCase {
 
 	// show which words in String
 	public static void showWords() {
-		String word = "";
-		List<String> listWords = new ArrayList<String>();
-
-		for (int i = 0; i < phrase.length(); i++) {
-			
-			if (Character.isUpperCase(phrase.charAt(i))) {
-				char aux = phrase.charAt(i);
+		for(int i = 0; i< phrase.length();i++){
+			if(Character.isUpperCase(phrase.charAt(i))){
+				System.out.println(phrase.substring(i));
 			}
-			
-			           
-			/*
-			do{
-				word = String.valueOf(phrase.charAt(i));
-			}while(Character.isLowerCase(phrase.charAt(i)));				
-			
-			listWords.add(word);
-			
-			word = "";
-			*/
 		}
 	}
 }
