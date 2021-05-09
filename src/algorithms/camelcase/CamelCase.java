@@ -24,11 +24,16 @@ public class CamelCase {
 	}
 
 	// show which words in String
-	public static void showWords() {
+	public static void showWords(){
 		for(int i = 0; i< phrase.length();i++){
-			if(Character.isUpperCase(phrase.charAt(i))){
-				System.out.println(phrase.substring(i));
+			char ch = phrase.charAt(i);
+			if(Character.isUpperCase(ch)){
+				System.out.print(ch);
+			}else{
+				System.out.println();
 			}
 		}
+		
+		
 	}
 }
