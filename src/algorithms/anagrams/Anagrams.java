@@ -2,11 +2,16 @@ package algorithms.anagrams;
 import java.util.HashMap;
 import java.util.Map;
 
-// uma palavra que pode formar outras ex: Iracema -> America
-// para calcular quantas possibilidades de anagramas existem pode-se
-// usar fatorial.
-//uma string é um anagrama de outra se a segunda é simplesmente um rearranjo
-// da primeira ex: amor -> roma
+/* uma palavra que pode formar outras ex: Iracema -> America
+* para calcular quantas possibilidades de anagramas existem pode-se
+* usar fatorial.
+* uma string é um anagrama de outra se a segunda é simplesmente um rearranjo
+* da primeira ex: amor -> roma
+* O algoritmo deve comparar duas strings -se elas tem a mesma quantidade de caracteres
+* e os mesmos caracteres.
+* o algoritmo recebe duas palavras e compara se são anagramas.
+* 
+* */
 
 //word formed by rearranging the letters of a different word  ex: listen -> silence
 //to calculate how many anagram possibilities there are you can
