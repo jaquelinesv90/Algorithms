@@ -6,9 +6,6 @@ package algorithms.anagrams;
  * 
  * Two Strings, a and b called anagrams if they contain all the same 
  * characters in the same frequencies.For example anagrams of CAT: ACT,TAC..
- * 
- * 
- * 
  */
 public class JavaAnagrams {
 
@@ -23,10 +20,15 @@ public class JavaAnagrams {
 			return false;
 		}
 		
-		//para cada letra do alfabeto terá um array int
-		//ele será inicializado com 0
+		 /*para cada letra do alfabeto terá um array int
+		 * ele será inicializado com 0, então 26 zeros
+		 * em uma matriz agora, para qualquer coisa que 
+		 * for fazer com frequencias de char faça uma matriz
+		 * alfabética e use-a sempre, sempre melhor que um hashMap
+		*/ 
 		int[] char_frequencies = new int[26];
 
+		//um for para cada String
 		for (int i = 0; i < a_length; i++) {
 			char current_char = a.charAt(i);
 			int index = current_char - 'a';
@@ -43,11 +45,11 @@ public class JavaAnagrams {
 			if (char_frequencies[i] != 0)
 				return false;
 		}
-
 		return true;
 	}
 
 	public static void main(String[] args) {
-		isAnagram("CAT", "ACT");
+		boolean result = isAnagram("CAT", "TFG");
+		System.out.println((result == true)? "Anagram":"not anagram");
 	}
 }
