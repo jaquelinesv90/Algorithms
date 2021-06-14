@@ -1,6 +1,4 @@
 package algorithms.camelcase;
-import java.util.ArrayList;
-import java.util.List;
 
 //count how many words are in the phrase
 public class CamelCase {
