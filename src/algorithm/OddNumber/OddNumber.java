@@ -1,5 +1,13 @@
 package algorithm.OddNumber;
 
+/* Odd numbers are whole numbers that cannot be divided exactly into pairs
+ * Odd numbers,when divided by 2,leave a remainder of 1.
+ * 
+ * Numero ímpar
+ * É qualquer número dividido por 2 resulta em um número inteiro.
+ * O algoritmo exibe os numeros impares dentre o intervalo passado 
+ * para as variaveis number1 e number2
+ */
 public class OddNumber {
 	
 	public static void main(String[]  args){
