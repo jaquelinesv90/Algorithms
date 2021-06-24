@@ -31,6 +31,8 @@ public class JavaAnagrams {
 		//um for para cada String
 		for (int i = 0; i < a_length; i++) {
 			char current_char = a.charAt(i);
+			//vai pegar o index do caracter atual, o 'a' é a primeira letra do alfabeto
+			//então vai ter index 0
 			int index = current_char - 'a';
 			char_frequencies[index]++;
 		}
@@ -41,6 +43,8 @@ public class JavaAnagrams {
 			char_frequencies[index]--;
 		}
 
+		//cada elemento deve ser zero 
+		
 		for (int i = 0; i < 26; i++) {
 			if (char_frequencies[i] != 0)
 				return false;
