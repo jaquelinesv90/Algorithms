@@ -1,4 +1,4 @@
-package algorithm.OddNumber;
+package algorithms.oddNumber;
 
 /* Odd numbers are whole numbers that cannot be divided exactly into pairs
  * Odd numbers,when divided by 2,leave a remainder of 1.
