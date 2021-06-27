@@ -31,8 +31,8 @@ public class JavaAnagrams {
 		//um for para cada String
 		for (int i = 0; i < a_length; i++) {
 			char current_char = a.charAt(i);
-			//vai pegar o index do caracter atual, o 'a' é a primeira letra do alfabeto
-			//então vai ter index 0
+			// vai pegar o index,ou seja a posição do caracter atual no alfabeto, na palavra CAT
+			// o index do 'c' é 2, do 'a' é 0, do 't' é 19.
 			int index = current_char - 'a';
 			char_frequencies[index]++;
 		}
