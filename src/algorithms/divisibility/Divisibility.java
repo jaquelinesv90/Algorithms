@@ -11,7 +11,7 @@ package algorithms.divisibility;
  */
 public class Divisibility {
 	
-	static Integer[] array = {11};
+	static Integer[] array = {16};
 	
 	public static void main(String[] args){
 		boolean result = isDivisible();
@@ -27,7 +27,7 @@ public class Divisibility {
 			int number = 0;
 			number = aux.charAt(1);
 			
-			if((number % 10) != 0){
+			if((number % 2) != 0){
 				return false;
 			}
 		}
