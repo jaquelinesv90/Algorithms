@@ -8,6 +8,27 @@ package algorithms.fizzbuzz;
  */
 
 public class Fizzbuzz {
-	
 
+	public static void main(String[] args) {
+		Integer n = 5;
+
+		String[] list = new String[n];
+
+		for (int i = 0; i < n; i++) {
+			if ((n % 5 == 0) && (n % 3 == 0)) {
+				list[i] = "FizzBuzz";
+			}else if(n % 3 == 0){
+				list[i] = "Fizz";
+			}else if(n % 5 == 0){
+				list[i] = "Buzz";
+			}else{
+				list[i] = Integer.toString(i);
+			}
+		}
+			
+		for (String string : list) {
+			System.out.println(string);
+		}
+		
+	}
 }
