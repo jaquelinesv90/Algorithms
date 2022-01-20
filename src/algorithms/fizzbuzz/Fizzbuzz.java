@@ -12,23 +12,16 @@ public class Fizzbuzz {
 	public static void main(String[] args) {
 		Integer n = 5;
 
-		String[] list = new String[n];
-
-		for (int i = 0; i < n; i++) {
-			if ((n % 5 == 0) && (n % 3 == 0)) {
-				list[i] = "FizzBuzz";
-			}else if(n % 3 == 0){
-				list[i] = "Fizz";
-			}else if(n % 5 == 0){
-				list[i] = "Buzz";
+		for (int i = 1; i <= n; i++) {
+			if (((i % 5) == 0) && ((i % 3) == 0)) {
+				System.out.println("FizzBuzz,");
+			}else if((i % 3) == 0){
+				System.out.println("Fizz,");
+			}else if((i % 5) == 0){
+				System.out.println("Buzz,");
 			}else{
-				list[i] = Integer.toString(i);
+				System.out.println(Integer.toString(i)+",");
 			}
 		}
-			
-		for (String string : list) {
-			System.out.println(string);
-		}
-		
 	}
 }
