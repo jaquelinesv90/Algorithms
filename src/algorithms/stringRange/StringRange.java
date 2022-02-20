@@ -1,9 +1,11 @@
+package algorithms.stringRange;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Test {
-
+public class StringRange {
+	
 	public static void main(String[] args) {
 		int min = 1;
 		int max = 10;
@@ -25,4 +27,5 @@ public class Test {
 
 		}
 	}
+
 }
