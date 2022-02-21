@@ -1,10 +1,10 @@
-package algorithms.stringRange;
+package algorithms.randomNumber;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class StringRange {
+public class RandomNumber {
 	
 	public static void main(String[] args) {
 		int min = 1;
