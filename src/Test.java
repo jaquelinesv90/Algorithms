@@ -1,14 +1,23 @@
-import java.util.Random;
 
 
 public class Test {
 
-	public static void main(String[] args) {
-		Random r = new Random();
+	public static void main(String[] args){
+		int n = 20;
+		Test.fibo(n);
 		
-		int n = r.nextInt(10);
-		n+= 1;
+	}
+	
+	static int fibo(int n){
+		int ant = 0;
+		int atual = 1;
 		
-		System.out.println(n);
+		for(int i = 0; i < n ; i++){
+			atual = atual +ant;
+			ant=atual;
+			System.out.println(atual);
+		}
+		return 0;
+		
 	}
 }
